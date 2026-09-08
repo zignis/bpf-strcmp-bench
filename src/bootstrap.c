@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: (LGPL-2.1 OR BSD-2-Clause)
-/* Copyright (c) 2020 Facebook */
+// Copyright (c) 2026 zignis
+
 #include "bootstrap.skel.h"
 #include <stdio.h>
 

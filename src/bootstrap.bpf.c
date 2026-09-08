@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0 OR BSD-3-Clause
-/* Copyright (c) 2020 Facebook */
+// Copyright (c) 2026 zignis
+
 #include "vmlinux.h"
 #include <bpf/bpf_helpers.h>
 
@@ -40,6 +41,8 @@ int handle_verdict(struct __sk_buff *skb) {
 
 #elif defined(BENCH_STRNCMP)
 
+    // this will simply fail since the helper is not allowed to read pkt
+    // pointers
     if (bpf_strncmp(p, NEEDLE_SIZE, "POST") == 0)
       return SK_PASS;
 
