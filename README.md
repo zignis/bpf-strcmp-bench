@@ -63,6 +63,6 @@ sudo src/bootstrap
 
 ## License
 
-This project is built on top of the [eunomia-bpf bootstrap template](https://github.com/eunomia-bpf/bpf-developer-tutorial).
+This project is built on top of the [eunomia-bpf bootstrap template](https://github.com/eunomia-bpf/libbpf-starter-template).
 
 This project is licensed under the MIT License. See the **[LICENSE](LICENSE)** file for more information.
