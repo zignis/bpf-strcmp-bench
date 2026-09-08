@@ -17,7 +17,7 @@ static int try_bpf_load(const ull iterations) {
 }
 
 int main(void) {
-  libbpf_set_print(NULL); // suppress verifier logs
+  // libbpf_set_print(NULL); // suppress verifier logs
 
   ull l = 0, r = 1, max_iters = 0;
 
@@ -27,7 +27,9 @@ int main(void) {
     r *= 2;
   }
 
-  // binary search
+  r--; // r is known to fail
+
+  // find exact max iters
   while (l <= r) {
     const ull mid = l + (r - l) / 2;
 
