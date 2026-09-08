@@ -5,9 +5,9 @@
 | Method             | Max iterations | Processed instructions | `max_states_per_insn` | `total_states` | `peak_states` | Failure reason                             |
 |--------------------|----------------|------------------------|-----------------------|----------------|---------------|--------------------------------------------|
 | Naive              | 1,638          | 34,420                 | 4                     | 499            | 499           | The sequence of 8193 jumps is too complex. |
-| `__builtin_memcmp` | 8190           | 2,04,783               | 4                     | 2053           | 2053          | The sequence of 8193 jumps is too complex. |
+| `__builtin_memcmp` | 8,190          | 2,04,783               | 4                     | 2,053          | 2,053         | The sequence of 8193 jumps is too complex. |
 | `bpf_strncmp`      | 0              | 24                     | 0                     | 2              | 2             | helper access to the packet is not allowed |
-| Integer tags       | 8190           | 1,31,064               | 4                     | 1299           | 1299          | The sequence of 8193 jumps is too complex. |
+| Integer tags       | 8,190          | 1,31,064               | 4                     | 1,299          | 1,299         | The sequence of 8193 jumps is too complex. |
 
 ### Environment
 
